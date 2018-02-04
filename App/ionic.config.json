@@ -1,0 +1,8 @@
+{
+  "name": "assurlink",
+  "app_id": "930e9a07",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

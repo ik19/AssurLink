@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label fixed>URL code</ion-label>
+      <ion-input type="text" name="url" required [(ngModel)]="user.url"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Username</ion-label>
+      <ion-input type="text" name="login" required [(ngModel)]="user.login"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="password" name="password" required [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+    <button ion-button block type="submit">Log In</button>
+  </form>
+</ion-content>
